@@ -1,0 +1,9 @@
+De acordo com o guia "Brief History of JavaScript" no site **JavaScript Developer Roadmap** (`roadmap.sh/guides/history-of-javascript`), a história do JavaScript pode ser resumida nos seguintes pontos chave:
+
+- **Criação (1995):** O JavaScript foi criado por **Brendan Eich** na Netscape. Foi anunciado pela primeira vez num comunicado de imprensa da Netscape em 1995.
+- **Nomes Iniciais:** Teve uma história de nomes "bizarra". Originalmente foi chamado de **Mocha** pelo criador. Mais tarde, foi renomeado para **LiveScript**.
+- **O Nome "JavaScript" (1996):** Cerca de um ano após o lançamento, a Netscape decidiu renomeá-lo para **JavaScript**. A intenção era capitalizar sobre a popularidade da comunidade Java, embora o JavaScript não tivesse relação direta com a linguagem Java. O Netscape 2.0 foi lançado com suporte oficial para JavaScript.
+- **Padronização (1996-1999):** A Netscape submeteu a linguagem à **ECMA International** em 1996 para padronização.
+  - A primeira edição da especificação (ECMAScript 1) foi lançada em 1997.
+  - Seguiram-se o ECMAScript 2 (1998) e o ECMAScript 3 (1999).
+- **A "Década de Silêncio" e o ES4:** Após o ES3 em 1999, houve um longo período sem mudanças no padrão oficial. Houve tentativas de lançar uma quarta edição (ES4) com funcionalidades como classes e tipagem estática, que estava prevista para 2008, mas foi abandonada devido a divergências políticas sobre a complexidade da linguagem. Durante este tempo, os navegadores continuaram a implementar extensões próprias, obrigando os desenvolvedores a usarem _polyfills_ para compatibilidade.

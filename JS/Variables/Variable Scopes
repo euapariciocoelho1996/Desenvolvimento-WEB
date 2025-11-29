@@ -1,0 +1,40 @@
+O conceito de **Variable Scopes** (Escopos de Variáveis) define **onde** suas variáveis estão acessíveis (visíveis) dentro do código. Se você tentar acessar uma variável fora do escopo dela, o JavaScript lançará um erro ou retornará `undefined`.
+
+Existem 3 tipos principais de escopo que você precisa dominar:
+
+### 1\. Escopo Global (Global Scope)
+
+Variáveis declaradas **fora** de qualquer função ou bloco `{}`.
+
+- **Visibilidade:** Podem ser acessadas de **qualquer lugar** do arquivo.
+- **Perigo:** Evite encher o escopo global ("poluição"), pois qualquer parte do código pode alterar essas variáveis acidentalmente, causando bugs.
+
+### 2\. Escopo de Função (Function Scope)
+
+Variáveis declaradas **dentro** de uma função.
+
+- **Visibilidade:** Só existem dentro daquela função. Elas são criadas quando a função roda e destruídas quando ela termina.
+- **Detalhe:** Tanto `var`, `let` quanto `const` respeitam o escopo de função.
+
+### 3\. Escopo de Bloco (Block Scope)
+
+A grande mudança do ES6 (2015). Variáveis declaradas dentro de um bloco `{}` (como em um `if`, `for` ou `switch`).
+
+- **Visibilidade:**
+  - **`let` e `const`:** Ficam presas dentro do bloco.
+  - **`var`:** **Ignora** o bloco e "vaza" para fora (a menos que seja uma função).
+
+### Exemplo Prático (A diferença crucial)
+
+```javascript
+if (true) {
+  var vaza = "Eu saio do if!";
+  let preso = "Eu fico aqui.";
+  const tambemPreso = "Eu também.";
+}
+
+console.log(vaza); // ✅ "Eu saio do if!" (O var ignorou o bloco)
+// console.log(preso); // ❌ Erro: preso is not defined
+```
+
+Este comportamento do `var` vazar de blocos é uma das principais razões pelas quais usamos `let` e `const` hoje em dia.

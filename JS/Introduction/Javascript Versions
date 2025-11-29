@@ -1,0 +1,18 @@
+A seção sobre **Versões do JavaScript** (`JavaScript Versions`) no guia do _roadmap.sh_ destaca a evolução da linguagem através da especificação ECMAScript, que define os padrões do JavaScript.
+
+Resumo das principais versões e marcos mencionados:
+
+- **ECMAScript 1, 2 e 3 (1997-1999):** As primeiras versões que estabeleceram a base da linguagem.
+- **ES4 (Abandonado):** Uma tentativa ambiciosa de adicionar tipagem estática e classes que foi abandonada devido à complexidade e falta de consenso.
+- **ES5 (2009):** Uma atualização importante após uma "década de silêncio". Trouxe melhorias significativas, como o `strict mode`, novos métodos de Array (`forEach`, `map`, etc.) e suporte a JSON.
+- **ES6 / ES2015 (2015):** A maior atualização da história do JavaScript até então. Introduziu mudanças fundamentais, incluindo:
+  - `let` e `const` para variáveis com escopo de bloco.
+  - _Arrow functions_.
+  - Classes.
+  - _Template literals_.
+  - Módulos (import/export).
+  - Promises para programação assíncrona.
+  - Desestruturação (_destructuring_) e parâmetros padrão.
+- **ES2016+ (Lançamentos Anuais):** A partir de 2015, o comitê TC39 adotou um ciclo de lançamento anual. Cada nova versão (ES2016, ES2017, ES2018, etc.) traz funcionalidades incrementais, garantindo que a linguagem continue evoluindo constantemente sem grandes rupturas como a do ES4. Exemplos incluem `async/await` (ES2017) e `BigInt` (ES2020).
+
+Essa estrutura de versões mostra a transição do JavaScript de uma linguagem de script simples para uma ferramenta robusta capaz de sustentar aplicações complexas.

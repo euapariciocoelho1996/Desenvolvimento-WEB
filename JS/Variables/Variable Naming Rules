@@ -1,0 +1,41 @@
+O tópico **Variable Naming Rules** (Regras de Nomeação de Variáveis) no JavaScript é dividido entre **regras obrigatórias** (que causam erro se não seguidas) e **convenções** (boas práticas da comunidade).
+
+Principais diretrizes:
+
+### 1. Regras Obrigatórias (Sintaxe)
+
+Se você não seguir estas regras, seu código **não vai rodar** (SyntaxError):
+
+- **Não comece com números:** `let 1nome = "Pedro"` ❌ (Erro). Deve ser `let nome1 = "Pedro"` ✅.
+- **Apenas caracteres permitidos:** Os nomes só podem conter letras, números, `_` (underscore) e `$` (cifrão). Espaços e hífens (`-`) são proibidos.
+  - `let nome-completo` ❌
+  - `let nome_completo` ✅
+  - `let $preco` ✅
+- **Sem Palavras Reservadas:** Você não pode usar palavras que já "pertencem" à linguagem, como `if`, `for`, `let`, `class`, `return`, `function`.
+- **Case Sensitive:** O JavaScript diferencia maiúsculas de minúsculas. `nome`, `Nome` e `NOME` são três variáveis diferentes.
+
+### 2. Convenções (Boas Práticas)
+
+Seguir isso torna seu código profissional e legível:
+
+- **camelCase:** É o padrão para variáveis e funções. A primeira letra é minúscula e cada palavra subsequente começa com maiúscula.
+  - Exemplo: `nomeDoPaciente`, `dataDeNascimento`.
+- **Nomes Descritivos:** Evite nomes genéricos como `x`, `y`, `dado`. Use nomes que expliquem o conteúdo.
+  - Ruim: `let n = "Pedro";`
+  - Bom: `let nomeEnfermeiro = "Pedro";`
+- **Constantes (Upper Snake Case):** Se uma variável `const` guarda um valor que **nunca muda** e é conhecido antes da execução (como configurações), usa-se tudo maiúsculo com `_`.
+  - Exemplo: `const MAX_USERS = 100;` ou `const COR_PADRAO = "#FFF";`.
+
+### Resumo Visual
+
+| Tipo                     | Correto ✅                         | Incorreto ❌                      |
+| :----------------------- | :--------------------------------- | :-------------------------------- |
+| **Variável Comum**       | `pacienteId`, `_privado`, `preco$` | `1paciente`, `paciente-id`, `let` |
+| **Constante Global**     | `API_URL`, `TAXA_FIXA`             | `apiUrl`, `TaxaFixa`              |
+| **Classes (PascalCase)** | `UsuarioController`                | `usuarioController`               |
+
+Agora que você sabe nomear suas variáveis, o próximo passo natural no roadmap é entender os **Tipos de Dados (Data Types)** que essas variáveis podem armazenar. Vamos para lá?
+
+Vídeo sobre boas práticas que toca nesses pontos:
+[JavaScript Variables and Naming Rules](https://www.youtube.com/watch?v=XgSjoHgy3Rk)
+Este vídeo é relevante pois mostra visualmente o que acontece no console quando tentamos quebrar essas regras de nomenclatura.

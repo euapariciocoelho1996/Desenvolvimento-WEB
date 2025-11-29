@@ -1,0 +1,4 @@
+Basicamente, existem **duas maneiras principais** de executar JavaScript:
+
+1.  **No Navegador (Frontend):** É a forma mais comum. Você pode inserir o código dentro de um arquivo HTML usando a tag `<script>` ou rodar comandos diretamente no **Console** das ferramentas de desenvolvedor (F12).
+2.  **No Computador/Servidor (Backend):** Utilizando um ambiente de execução como o **Node.js**, que permite rodar arquivos JavaScript (`.js`) diretamente pelo terminal do seu sistema operacional, sem precisar de um navegador.

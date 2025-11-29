@@ -1,0 +1,10 @@
+Resumo definitivo sobre **Hoisting**:
+
+1.  **O que é:** É o comportamento do JavaScript de mover as **declarações** para o topo do código antes da execução.
+2.  **`var`:** É içado e inicializado como `undefined`. Você pode acessar antes de declarar, mas o valor será "indefinido".
+3.  **`let` e `const`:** São içados, mas ficam bloqueados numa "Zona Morta" (TDZ). Acessá-los antes da linha de declaração gera um **Erro**.
+4.  **Funções (`function`)**: São içadas completamente. Você pode chamar a função na linha 1 e declará-la na linha 10 sem problemas.
+
+**Regra de Ouro:** Para evitar confusão, declare sempre suas variáveis e funções no topo do escopo ou antes de usá-las.
+
+O próximo passo lógico no roadmap é entender **Escopos de Variáveis (Scope)** para saber exatamente onde suas variáveis podem ser vistas. Quer que eu explique?
